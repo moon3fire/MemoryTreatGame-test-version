@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(GameTimerTick());
         }
-        if(isTimeExpired)
+        if(isTimeExpired && !isGamefFinished)
         {
             isTimeExpired = false;
             GameIsOver();
